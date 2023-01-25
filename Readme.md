@@ -34,3 +34,5 @@ The package currently supports the following operations:
 - Reading records
 
 These operations can be performed via the Directus app, SDK, and API.
+
+Keep in mind that search for the encrypted fields is not supported.

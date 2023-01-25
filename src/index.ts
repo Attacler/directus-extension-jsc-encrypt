@@ -15,8 +15,6 @@ export default defineHook(({ filter, action }, { env }) => {
     );
   }
 
-  console.log(totalEncryptionFields, env.DE_KEY);
-
   action("items.read", async ({ collection, payload }) => {
     if (totalEncryptionFields[collection] != null) {
       for (const item of payload)
