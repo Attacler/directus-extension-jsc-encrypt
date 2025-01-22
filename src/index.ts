@@ -1,5 +1,5 @@
 import { defineHook } from "@directus/extensions-sdk";
-import { createCipheriv, createDecipheriv, randomBytes } from "crypto";
+import { createCipheriv, createDecipheriv, randomBytes } from "node:crypto";
 
 export default defineHook(({ filter, action }, { env }) => {
   const totalEncryptionFields: { [key: string]: string[] } = {};
